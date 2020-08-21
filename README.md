@@ -8,7 +8,7 @@ __React Router__.
 ## Objectives
 
 * Practice building an application with __React Router__
-* Access routes using a Navbar with matched routes
+* Access routes using a NavBar with matched routes
 * Visit different "views" in the application by accessing different routes
 
 ## React Router App
@@ -60,16 +60,16 @@ This file contains seed data for __Actors, Movies & Directors__
 #### `App`
 
 This component already contains a `Router` wrapper where we'll include our
-particular routes. Inside this element, we'll need to render our `Navbar` and 4
+particular routes. Inside this element, we'll need to render our `NavBar` and 4
 __React Router__ `Route` components with paths to __/, /movies, /directors &
 /actors__ and rendering the respective components. When a user visits the root
 URL, they should see the `Home` component.
 
 **Note**: Since a `Router` wrapper can only wrap one child element, use a `div` to
-wrap the `Navbar` and `Route`s. This allows us to apply a CSS class at the App
+wrap the `NavBar` and `Route`s. This allows us to apply a CSS class at the App
 component level.
 
-#### `Navbar`
+#### `NavBar`
 
 This component needs to render 4 `<NavLink>` components. They will be for __/,
 /movies, /directors, /actors__ <-- in this order(test checks for this).
@@ -94,12 +94,11 @@ of their movies.
 
 This component should render the text `Actors Page` in an `<h1>`, and make a new `<div>` for
 each actor. The `<div>` should contain the actor's name and a `<ul>` with a list of their
-movies. 
+movies.
 
-> Note: The tests will count how many `<div>`s are nested inside your `Movies`, `Directors`, and `Actors` components. So to get tests to pass, you must create _exactly one_ `<div>` for each movie, director, or actor, and no additional nested `<div>`s in those components. 
+> Note: The tests will count how many `<div>`s are nested inside your `Movies`, `Directors`, and `Actors` components. So to get tests to pass, you must create _exactly one_ `<div>` for each movie, director, or actor, and no additional nested `<div>`s in those components.
 
 ## Resources
 
 * [React Router](https://github.com/ReactTraining/react-router)
 * [React Router Tutorial](https://reacttraining.com/react-router/web/guides/quick-start)
-
